@@ -16,6 +16,7 @@
 #corpo .texto-topo h2.sub-titulo{
     font-size:3.6vw;
     font-weight:700;
+    margin-bottom:5%;
 }
 #corpo .texto-topo P.bold {
     font-size:2.3vw;
@@ -25,7 +26,7 @@
 /* BANNER  */
 #corpo .banner_artista::before{
     padding: 0;
-    padding-top: 49.0625%;
+    padding-top: 50.0625%;
 }
 #corpo .banner_artista{position: relative;display: block;width: 100%; margin: 0 auto;}
 #corpo .banner_artista picture{display: block;width: 100%;}
@@ -55,7 +56,7 @@
 }
 #corpo .beneficios-card::before{
     padding: 0;
-    padding-top: 92.0625%;
+    padding-top: 95.0625%;
 }
 #corpo .beneficios-card picture{
     width: 80%;
@@ -136,7 +137,7 @@
 /* SOBRE A ARTISTA */
 #corpo .sobre-artista::before{
     padding: 0;
-    padding-top: 62.0625%;
+    padding-top: 63.0625%;
 }
 
 #corpo .sobre-artista picture{
@@ -241,6 +242,8 @@
   }
   #corpo .texto-topo h2.sub-titulo{
     font-size:4.2vw;
+    width: 60%;
+    margin: 1% auto 6%;
   }
   #corpo .texto-topo P.bold{
     font-size:2.3vw;
@@ -248,7 +251,7 @@
   }
 /* BANNER TOPO */
  #corpo .banner_artista::before {
-    padding-top: 81.0625%;
+    padding-top: 82.0625%;
 }
 #corpo .banner_artista .texto-artista p,
 #corpo .banner_artista .texto-artista h2
@@ -256,67 +259,91 @@
     font-size:3vw;
 }
 #corpo .banner_artista .texto-artista hr {
-    width: 86%;
+    width: 84%;
 }
 /* SEÇAO BENEFICIOS */
 #corpo .beneficios p {
     font-size: 3.2vw;
-    width: 83%;
+    width: 85%;
     margin: 2% auto;
     line-height: 5.5vw;
 }
+#corpo .beneficios h2 {
+    margin: 6%;
+}
 #corpo .beneficios-card::before {
-    padding-top: 157.0%;
+    padding-top: 137%;
 }  
 #corpo .beneficios .orientacao{
     font-size:2vw;
-    width: 95%;
+    width: 52%;
     margin: 5% auto 10%;
     line-height:3vw;
     
 }
+/* FAQ */
+#corpo .faq{
+
+}
+#corpo .faq h2 {
+    font-size:3.3vw;
+}
+#corpo .faq h3 {
+    font-size: 3.3vw;
+}
+#corpo .faq .texto-servico,
+#corpo .faq .texto-cobertura
+{
+ font-size:3.2vw;
+ line-height: 4.9vw
+}
+#corpo .faq .texto-servico{
+    width:77%;
+}
+#corpo .faq .texto-cobertura{ 
+    width:89%;
+}
+#corpo .faq img{
+    width: 17vw;
+}
+#corpo .faq .texto-zurich{
+  width:82%;
+  font-size:3.2vw;
+  line-height: 4.9vw
+}
+#corpo .faq .condicoes{
+ font-size:3.2vw;
+}
 /* SEÇÃO VIDEO */
 #corpo .video:before {
-    padding-top: 84.0625%;
+    padding-top: 88.0625%;
 }
 #corpo .video{
- margin-bottom: 17%;
+ margin-bottom: -6%;
 }
-
-/* SEÇAÕ INVESTIMENTO */
-#corpo .investimento-tabela::before {
-    padding-top: 219.0625%;
-   
-}
-#corpo .investimento-link::before {
-    padding-top: 66.0625%;
-   
-}
-#corpo .investimento-link a {
-    width: 36%;
-    bottom:15%;
-    left: 31%;
-}   
 /* SOBRE A ARTISTA */
 #corpo .sobre-artista::before {
-    padding-top: 107.0625%;
+    padding-top: 113.0625%;
+}
+#corpo .sobre-artista picture {
+    width: 100%;
 }
 #corpo .sobre-artista h2 {
-    font-size: 2.9vw;
+    font-size: 2.7vw;
 }
 /* seçao carrossel */
 #corpo .carroussel-servicos::before {
-    padding-top: 83.0625%;
+    padding-top: 88.0625%;
 }
 #corpo .carroussel-servicos .texto-carrossel img {
     width: 46vw;
-    margin-bottom:5%;
+    margin-bottom: 5%;
 }
 #corpo .carroussel-servicos .texto-carrossel h2 {
     font-size: 6vw;
 }
 #corpo .carroussel-servicos .texto-carrossel p {
-    font-size: 3.1vw;
+    font-size: 2.9vw;
 }
 
 #corpo .carroussel-servicos .owl-nav .owl-next, #corpo .carroussel-servicos .owl-nav .owl-prev {
