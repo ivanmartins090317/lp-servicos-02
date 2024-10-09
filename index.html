@@ -17,35 +17,39 @@
  #corpo {display: block;position: relative;margin: 0 auto; width: 100%;max-width: 1600px;box-sizing: border-box; padding: 0; font-family: 'Open Sans', sans-serif; color: #000000;overflow: hidden; background:#FFFFFF; text-align: center;}
 /* TEXTO TOPO */
 #corpo .texto-topo{ text-align: center;}
-#corpo .texto-topo img{ width:36%; margin-top:5%;}
-#corpo .texto-topo P { font-size:2.1vw; width:38%; margin:2% auto 4%;}
-#corpo .texto-topo h2.sub-titulo{ font-size:3.6vw; font-weight:700; margin-bottom:5%;}
-#corpo .texto-topo P.bold { font-size:2.3vw; font-weight:700; margin-top:-2vw} 
+#corpo .texto-topo img{ width:30%; margin-top:2%;}
+#corpo .texto-topo P { font-size:1.6vw; width:38%; margin:2% auto 4%;}
+#corpo .texto-topo h2.sub-titulo{ font-size:2vw; font-weight:700; margin-bottom:3%;}
+#corpo .texto-topo P.bold { font-size:2vw; font-weight:700; margin-bottom: 7%;} 
 /* BANNER */
 #corpo .banner_artista::before{ padding: 0; padding-top: 50.0625%;}
 #corpo .banner_artista{position: relative;display: block;width: 100%; margin: 0 auto;}
 #corpo .banner_artista picture{display: block;width: 100%;}
 #corpo .banner_artista picture img{position: relative;display: block;width: 97%; margin: 0 auto}
-#corpo .banner_artista .texto-artista p{ font-size:1.2vw; margin: 4% 0 -1%;}
+#corpo .banner_artista .texto-artista p{ font-size:1.2vw; margin: 3% auto 1%;}
 #corpo .banner_artista .texto-artista h2{ font-size:1.6vw; margin-bottom: 3%;}
 #corpo .banner_artista .texto-artista hr{ width:66%; margin: 3% auto;}
 /* SEÇÃO BENEFICOS */
-#corpo .beneficios p{ font-size:2.2vw; width:87%; margin:2% auto;}
-#corpo .beneficios h2{ font-size:3vw; margin:11% 0 6%; font-weight:400;}
-#corpo .beneficios-card::before{ padding: 0; padding-top: 95.0625%;}
-#corpo .beneficios-card picture{ width: 80%; margin: 0 auto;}
-#corpo .beneficios .orientacao{ font-size:1.2vw; width:59%; margin: 8% auto 10%;}
+#corpo .beneficios p{ font-size:2vw; width:87%; margin:2% auto;}
+#corpo .beneficios h2{ font-size:2vw; margin:5% auto; font-weight:400;}
+#corpo .beneficios-card::before{ padding: 0; padding-top: 96.0625%;}
+#corpo .beneficios-card picture{ width: 60%; margin: 0 auto;}
+#corpo .beneficios .orientacao{ font-size:1.2vw; width:59%; margin: 4% auto 6%;}
 /* FAQ */
-#corpo .faq h2{ font-size:3vw; font-weight:400;}
-#corpo .faq h3{ font-size:2.2vw;}
-#corpo .faq .texto-servico{ font-size: 2.2vw; width:64%; margin: 0 auto 4%;}
-#corpo .faq .texto-cobertura{ font-size: 2.2vw; width:79%; margin: 0 auto;}
+#corpo .faq h2{ font-size:2.8vw; font-weight:400;}
+#corpo .faq h3{ font-size:2vw;}
+#corpo .faq .texto-servico{ font-size: 1.8vw; width:64%; margin: 0 auto 3%;}
+#corpo .faq .texto-cobertura{ font-size: 1.8vw; width:79%; margin: 0 auto;}
 #corpo .faq img{ width:22vw; margin-top:10%;}
 #corpo .faq .texto-zurich{ font-size:1.8vw; width:88%; margin:4% auto;}
-#corpo .faq .condicoes{ font-size:1.8vw; font-weight:400; margin-bottom:11%;}
+#corpo .faq .condicoes{ font-size:1.8vw; font-weight:400; }
 /* VIDEO */
-#corpo .video::before{ padding: 0; padding-top: 76%; margin-bottom:10%;}
-#corpo .video .video-box{ z-index:10;}
+#corpo .video{margin-top: 8%; }
+#corpo .video::before{ padding: 0; padding-top: 45.0625%;}
+.flex_wrapper {         /* This wrapper controls alignment as needed  */         width: 100%;         height: 100%;         display: flex;         flex-direction: column;         justify-content: flex-start;          align-items: center;     }
+.flex_wrapper .size_wrapper {         width: 80%; /* Controls size of the video based on size of the parent */         margin-bottom: -15%; /* Or any other value as needed */     }
+.flex_wrapper .size_wrapper .video_wrapper {         position: relative;         margin: 0 auto;         height: 0;         width: 31%;         padding-bottom: 56.25%; /* 16:9 */     }   
+.flex_wrapper .size_wrapper .video_wrapper .spot_video {         margin: 0 auto 50px;         width: 100%;         position: absolute;         top: 0;         left: 0;         width: 100%;         height: 100%;         border-radius: 16px;     }
 /* SEÇÃO INVESTIMENTO */
 #corpo .investimento-tabela::before { padding-top: 215.0625%; }#corpo .investimento-tabela img{ width:75%;}
 #corpo .investimento-link::before { padding-top: 63.0625%; }
@@ -53,44 +57,76 @@
 #corpo .investimento-link a{ position: absolute; width: 20%; height:5%; background-color: transparent; bottom: 11%; left: 38%;}
 /* SOBRE A ARTISTA */
 #corpo .sobre-artista::before{ padding: 0; padding-top: 63.0625%;}
-
 #corpo .sobre-artista picture{ width:94%; margin:0 auto; }
-#corpo .sobre-artista h2{ font-size: 2.3vw; margin: 10% auto 6%; font-weight:400;}
+#corpo .sobre-artista h2{ font-size: 2.3vw; margin: 10% auto 4%; font-weight:400;}
 #corpo .sobre-artista a{ position: absolute; width: 17%; height:7%; background-color: transparent; bottom: 25%; left: 50%;}
-/* CARROUSSEL SEVIÇOS */
+/* CARROUSSEL SEVIÇOS 
 #corpo .carroussel-servicos::before{ padding: 0; padding-top: 64.0625%;}#corpo .carroussel-servicos{ margin-bottom:10%; position:relative;}
 #corpo .carroussel-servicos .texto-carrossel{ margin-top:6%;}
 #corpo .carroussel-servicos .texto-carrossel img{ width:26vw; margin:3.5%}
 #corpo .carroussel-servicos .texto-carrossel p{ font-size: 1.6vw; margin: -2.5vw 0 8%; padding:0;}
+#corpo .todos-servicos{    width:100%;    }
+#corpo .todos-servicos .grupo-servicos{    display: flex;    width: 95%;    margin: 0 auto;    justify-content: space-between; gap:2%;}
+#corpo .todos-servicos .grupo-servicos picture { position: relative;}
+#corpo .todos-servicos .grupo-servicos picture a{ position: absolute; width: 36%; height: 9%; background-color: transparent; bottom: 0%; left: 0%;}
+*/
+/* CARROUSSEL SEVIÇOS FOOTER*/
+#corpo .carroussel-servicos::before{ padding: 0; padding-top: 64.0625%;}#corpo .carroussel-servicos{ margin-bottom:5%; position:relative;}
+.owl-carousel {     width: 91%;   margin: 0 auto; }
+#corpo .carroussel-servicos .texto-carrossel{ margin-top:6%;}
+#corpo .carroussel-servicos .texto-carrossel img{ width:30%; margin:3.5%}
+#corpo .carroussel-servicos .texto-carrossel p{ font-size: 1.6vw; margin: 0 auto 8%; padding:0;}
 #corpo .carroussel-servicos picture{  display: inline-block;  width:90%;  margin:0 auto; }
 #corpo .carroussel-servicos picture a{ position: absolute; width: 36%; height: 7%; background-color: transparent; bottom: 0%; left: 3%;}
-/* NAVEGAÇÃO DO CARROUSSEL */
+/* NAVEGAÇÃO DO CARROUSSEL FOOTER*/
  #corpo .carroussel-servicos .owl-carousel.owl-drag .owl-item { width:300px; }
 #corpo .carroussel-servicos .owl-nav{ width:100%; position: absolute; top:43%; display:flex; align-items:center; justify-content:center;}
-#corpo .carroussel-servicos .owl-nav .owl-next, #corpo .carroussel-servicos .owl-nav .owl-prev{ width:50px; height:50px; border-radius:50%; background:#Fff; transform:rotate(180deg);}
-#corpo .carroussel-servicos .owl-nav .owl-prev{ position:absolute; right:0.2vw;}
-#corpo .carroussel-servicos .owl-nav .owl-next{ position:absolute; left:0.5vw;}
-
+#corpo .carroussel-servicos .owl-nav .owl-next, #corpo .carroussel-servicos .owl-nav .owl-prev{ width:50px; height:50px; border-radius:50%; background:#FFFFFF;border:1px solid #33333314}
+#corpo .carroussel-servicos .owl-nav .owl-prev{ position:absolute; left:-2.8vw;}
+#corpo .carroussel-servicos .owl-nav .owl-next{ position:absolute;right:-2.8vw ;}
 /* ----Responsividade media query---- */
-
 
 @media screen and (max-width: 1100px) {
 /* LOGO FASTSHOP TOPO */
-#corpo .texto-topo img{ width:34%;}
+#corpo .texto-topo img{ width:50%;}
 /* TEXTO TOPO */
-#corpo .texto-topo P{ font-size:2vw; }
+#corpo .texto-topo P{ font-size:3vw; width: 56%;}
 #corpo .texto-topo h2.sub-titulo{ font-size:4.2vw; width: 60%; margin: 1% auto 6%; }
-#corpo .texto-topo P.bold{ font-size:2.3vw; width:80%; margin-top:-4vw }
+#corpo .texto-topo P.bold{ font-size:2.3vw; width:80%; margin-top:0; }
 /* BANNER TOPO */
 #corpo .banner_artista::before { padding-top: 82.0625%;}
 #corpo .banner_artista .texto-artista p,
 #corpo .banner_artista .texto-artista h2{ font-size:3vw;}
 #corpo .banner_artista .texto-artista hr { width: 84%;}
+/* SEÇÃO BENEFICOS CARROSSEL*/
+#corpo .beneficios-card .categoria-Mobile1 picture {display:block;width: 90%; margin-left: 5%;}
+.owl-carousel{width: 46%; margin:0 auto;}
 /* SEÇAO BENEFICIOS */
 #corpo .beneficios p { font-size: 3.2vw; width: 85%; margin: 2% auto; line-height: 5.5vw;}
 #corpo .beneficios h2 { margin: 6%;}
-#corpo .beneficios-card::before { padding-top: 137%;} 
-#corpo .beneficios .orientacao{ font-size:2vw; width: 52%; margin: 5% auto 10%; line-height:3vw; }
+#corpo .beneficios-card::before { padding-top: 67%;} 
+#corpo .beneficios .orientacao{ font-size:2vw; width: 52%; margin: 5% auto; line-height:3vw; }
+
+/* seçao carrossel */
+#corpo .todos-servicos{width: 90%; margin:0 auto;}
+#corpo .todos-servicos .grupo-servicos {    display: flex;    width: 100%;    margin: 0 auto;    gap: 2%;    justify-content: space-between;}
+
+/* NAVEGAÇÃO DO CARROUSSEL */
+#corpo .categoria-Mobile1 .owl-carousel.owl-drag .owl-item { width:300px; }
+#corpo .categoria-Mobile1 .owl-nav{ width:100%; position: absolute; top:98.3%; display:flex; align-items:center; justify-content:center;}
+#corpo .categoria-Mobile1 .owl-nav .owl-next,
+#corpo .categoria-Mobile1 .owl-nav .owl-prev{ width:50px; height:50px; border-radius:50%; }
+#corpo .categoria-Mobile1 .owl-nav .owl-prev{ position:absolute; left:-1.5vw;}
+#corpo .categoria-Mobile1 .owl-nav .owl-next{ position:absolute;right:-1.5vw ;}
+
+/* DOTS NAVEGAÇÃO */
+
+.fast_rotativo_header .owl-dots { display: block; position: relative; margin: 10% auto; width: 75%; text-align: center; }
+.fast_rotativo_header .owl-dots .owl-dot { display: inline-block; position: relative; outline: none;}
+.fast_rotativo_header .owl-dots .owl-dot span { display: block; outline: 1px solid #aaaaaa; width: 8px; height: 8px; margin: 0 5px; border-radius: 250px; }
+.fast_rotativo_header .owl-dots .owl-dot:hover span, .fast_rotativo_header .owl-dots .owl-dot.active span { background-color: #8f8e8e; }                            
+
+
 /* FAQ */
 #corpo .faq h2 { font-size:3.3vw;}
 #corpo .faq h3 { font-size: 3.3vw;}
@@ -102,19 +138,37 @@
 #corpo .faq .texto-zurich{ width:82%; font-size:3.2vw; line-height: 4.9vw}
 #corpo .faq .condicoes{ font-size:3.2vw;}
 /* SEÇÃO VIDEO */
-#corpo .video:before { padding-top: 88.0625%;}
-#corpo .video{ margin-bottom: -6%;}
+#corpo .video{ margin-top:13%;}
+
+#corpo .video::before {
+    padding: 0;
+    padding-top: 79.0625%;
+}
+.flex_wrapper .size_wrapper .video_wrapper {
+        width: 54%;
+        padding-bottom: 98%;
+    }
 /* SOBRE A ARTISTA */
 #corpo .sobre-artista::before { padding-top: 113.0625%;}
 #corpo .sobre-artista picture { width: 100%;}
 #corpo .sobre-artista h2 { font-size: 2.7vw;}
+#corpo .sobre-artista a {bottom: 29%;}
 /* seçao carrossel */
 #corpo .carroussel-servicos::before { padding-top: 88.0625%;}
 #corpo .carroussel-servicos .texto-carrossel img { width: 46vw; margin-bottom: 5%;}
 #corpo .carroussel-servicos .texto-carrossel h2 { font-size: 6vw;}
 #corpo .carroussel-servicos .texto-carrossel p { font-size: 2.9vw;}
-#corpo .carroussel-servicos .owl-nav .owl-next, #corpo .carroussel-servicos .owl-nav .owl-prev { width: 22px; height: 22px; border-radius: 50%;}
+#corpo .carroussel-servicos .owl-nav { top:36% }
+#corpo .carroussel-servicos .owl-nav .owl-next, #corpo .carroussel-servicos .owl-nav .owl-prev { width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content:center;}
 
+/* seçao carrossel footer*/
+#corpo .carroussel-servicos::before { padding-top: 85.0625%;}
+#corpo .carroussel-servicos .owl-carousel{width: 85%; margin:0 auto;}
+#corpo .carroussel-servicos .texto-carrossel img { width: 35%;}
+#corpo .carroussel-servicos .texto-carrossel h2 { font-size: 6vw;}
+#corpo .carroussel-servicos .texto-carrossel p { font-size: 2vw; margin: 0 auto 6%;}
+#corpo .carroussel-servicos .owl-nav { top:39% }
+#corpo .carroussel-servicos .owl-nav .owl-next, #corpo .carroussel-servicos .owl-nav .owl-prev { width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content:center;}
 }
 
 </style>
@@ -141,8 +195,71 @@
             <hr>
         </div>
     </div>
-    
     <div class="beneficios">
+    <p class="texto-inicio">Para adotar hábitos de consumo mais conscientes e saudáveis, além da escolha de produtos de
+        qualidade, é preciso
+        enxergar a relação que temos com os equipamentos que fazem parte da nossa vida, e podem durar muitos anos a mais que
+        o
+        prazo do fabricante.
+    </p>
+    <p class="texto-complemento">
+        É nesse momento que o cuidado da garantia da Fast Shop se faz presente: você não precisa comprar outro produto e
+        gerar
+        mais resíduos no ambiente: a gente conserta seu produto por um ou dois anos após o término da garantia de fábrica.
+    </p>
+        <h2>Quais são os benefícios?</h2>
+        <div class="wrapper-aspect-ratio beneficios-card">
+            <div class="inner">
+                <div class="categoria-desktop">
+                    <picture>
+                      <img width="100%" height="auto"
+                            src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/imagem-card-beneficios-v2.png"
+                            alt="beneficios Fast Shop">
+
+                    </picture>
+                </div>
+    
+                <!-- modelo mobile -->
+                <div class="categoria-Mobile1">
+                    <div class=" ">
+                        <div id="fast_rotativo_header" class="owl-carousel fast_rotativo_header">
+                            <picture>
+                                <img src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v3/card_01_mobile.png"
+                                    alt="Beneficios">
+                                <!-- <a href="https://www.fastshop.com.br/web/c/4611686018425260530/Vinho?top=Y"></a> -->
+                            </picture>
+                            <picture>
+                                <img src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v3/card_02_mobile.png"
+                                    alt="Beneficios">
+                                <!-- <a href="https://www.fastshop.com.br/web/c/4611686018425260530/Vinho?top=Y"></a> -->
+                            </picture>
+    
+                            <picture>
+                                <img src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v3/card_03_mobile.png"
+                                    alt="Beneficios">
+                                <!-- <a href="https://www.fastshop.com.br/web/c/4611686018425260530/Vinho?top=Y"></a> -->
+                            </picture>
+                            <picture>
+                                <img src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v3/card_04_mobile.png"
+                                    alt="Beneficios">
+                                <!-- <a href="https://www.fastshop.com.br/web/c/4611686018425260530/Vinho?top=Y"></a> -->
+                            </picture>
+    
+                            <picture>
+                                <img src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v3/card_05_mobile.png"
+                                    alt="Beneficios">
+                                <!-- <a href="https://www.fastshop.com.br/web/c/4611686018425260530/Vinho?top=Y"></a> -->
+                            </picture>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <p class="orientacao">* Consulte os produtos e regiões elegíveis no momento da abertura do sinistro.</p>
+
+        </div>
+
+    <!-- <div class="beneficios">
         <p class="texto-inicio">Para adotar hábitos de consumo mais conscientes e saudáveis, além da escolha de produtos de qualidade, é preciso
         enxergar a relação que temos com os equipamentos que fazem parte da nossa vida, e podem durar muitos anos a mais que o
         prazo do fabricante.
@@ -154,12 +271,13 @@
         <h2>Quais são os benefícios?</h2>
         <div class="wrapper-aspect-ratio beneficios-card">
             <picture class="inner">
-                <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/imagem-card-beneficios-mobile.png">
-                <img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/imagem-card-beneficios.png" alt="beneficios Fast Shop">
+                <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/imagem-card-beneficios-mobile-v2.png">
+                <img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/imagem-card-beneficios-v2.png" alt="beneficios Fast Shop">
             </picture>
         </div>
-        <p class="orientacao">* Consulte os produtos e regiões elegíveis no momento da abertura do sinistro.</p>
+        <p class="orientacao">* Consulte os produtos e regiões elegíveis no momento da abertura do sinistro.</p> -->
     </div>
+    
     <div class="faq">
         <h2>FAQ</h2>
         <h3>Por quanto tempo terei cobertura?</h3>
@@ -181,14 +299,17 @@
     soluções de seguros multicanal adquirida em mais de 210 países e territórios. Para mais informações: www.zurich.com.b</p>
     <h3 class="condicoes">CONFIRA AS CONDIÇÕES GERAIS</h3>
     </div>
-
-    <!-- <div class="wrapper-aspect-ratio video">
-        <picture class="inner">
-            <source media="(max-width: 1100px)" srcset="files/imagem-video-mobile.png">
-            <img src="files/imagem_video.png" class="video-box" alt="">
-        </picture>
-       
-    </div>    -->
+<div class="wrapper-aspect-ratio video">
+    <div class="flex_wrapper inner">
+        <div class="size_wrapper">
+            <div class="video_wrapper">
+    <iframe class="spot_video" src="https://www.youtube.com/embed/GYkfF-imUSk" frameborder="0" allowfullscreen></iframe>
+    
+            </div>
+            <!-- If more than one video, duplicate this div (class="size-wrapper") -->
+        </div>
+    </div>
+</div>
     
         <div class="wrapper-aspect-ratio sobre-artista">
             <picture class="inner">
@@ -199,7 +320,8 @@
                     src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/sobre-artista.png"
                     alt="banner artista Camila Teshima">
             </picture>   
-            <a href="#"></a>    
+            <a href="https://www.fastshop.com.br/web/a/fast_cuida_colaboracoes
+"></a>    
         </div>
 
 <div class="wrapper-aspect-ratio carroussel-servicos">
@@ -209,58 +331,101 @@
             <p>Descubra todos nossos cuidados</p>
         </div>
      
+      
         <div class="carousel_serviços">
             <div id="fast_rotativo" class="owl-carousel fast_rotativo">
+                <!-- <picture>
+                            <img width="100%" height="auto"
+                                src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_01.png"
+                                alt="Serviços disponiveis na Fast Shop">
+                            <a href="https://www.fastshop.com.br/web/a/services_apple"></a>
+                        </picture> -->
                 <picture>
-                    <img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_01.png" alt="Serviços disponiveis na Fast Shop">
-                    <a href=""></a>
+                    <img width="100%" height="auto"
+                        src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_02.png"
+                        alt="Serviços disponiveis na Fast Shop">
+                    <a href="https://www.fastshop.com.br/web/a/casa_inteligente"></a>
                 </picture>
                 <picture>
-                    <img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_02.png" alt="Serviços disponiveis na Fast Shop">
-                    <a href=""></a>
+                    <img width="100%" height="auto"
+                        src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_03.png"
+                        alt="Serviços disponiveis na Fast Shop">
+                    <a href="https://www.fastshop.com.br/web/a/fast_cuida_suporte"></a>
                 </picture>
                 <picture>
-                    <img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_03.png" alt="Serviços disponiveis na Fast Shop">
-                    <a href=""></a>
+                    <img width="100%" height="auto"
+                        src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-07/files/servico_01.png"
+                        alt="Serviços disponiveis na Fast Shop">
+                    <a href="https://www.fastshop.com.br/web/a/fast_cuida_instalacao
+"></a>
                 </picture>
                 <picture>
-                    <img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_04.png" alt="Serviços disponiveis na Fast Shop">
-                    <a href=""></a>
+                    <img width="100%" height="auto"
+                        src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_05.png"
+                        alt="Serviços disponiveis na Fast Shop">
+                    <a href="https://www.fastshop.com.br/web/a/fast_cuida_seguro"></a>
                 </picture>
-                <picture>
-                    <img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_05.png" alt="Serviços disponiveis na Fast Shop">
-                    <a href=""></a>
-                </picture>
-               
-               
+        
+        
             </div>
+        
+        
         </div>
 
     </div>
 </div>
    
 <script>
-         $(document).ready(function () {
-                $(".fast_rotativo").owlCarousel({
+
+    var larguraDaTela = window.innerWidth;
+
+    // Se a largura da tela for menor que 1100px
+    if (larguraDaTela < 1100) {
+        document.querySelector('.categoria-Mobile1').style.display = 'block';
+        document.querySelector('.categoria-desktop').style.display = 'none';
+
+        $('.fast_rotativo_header').owlCarousel({
+
+
+            loop: true,
+            smartSpeed: 600,
+            responsiveClass: true,
+            nav: true,
+            dots: true,
+            navText: ['<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png">', '<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png">'],
+            responsive: { 0: { items: 1 } },
+            margin: 2,
+            dots: true,
+            autoplay: false,
+            autoplayTimeout: 0,
+            autoplayHoverPause: false
+        });
+    } else {
+        document.querySelector('.categoria-desktop').style.display = 'flex';
+        document.querySelector('.categoria-Mobile1').style.display = 'none';
+
+    }
+
+     // CARROSSEL FOOTER
+        var carouselDelay = 1000;
+
+        if (carouselDelay) {
+            setTimeout(function () {
+                document.querySelector('#fast_rotativo').style.display = 'block';
+
+                $('#fast_rotativo').owlCarousel({
+                    items: 1,
                     loop: true,
-                    dots: false,
-                    nav: true,
                     smartSpeed: 600,
                     responsiveClass: true,
                     nav: true,
                     navText: ['<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png">', '<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png">'],
-                    responsive: {
-                        0: { items: 3, margin: 0 },
-                        1100: {
-                            items: 4
-                        }
-                    },
-                    mergeFit: true,
-                    autoWidth: false,
-                    slideBy: 3,
+                    responsive: { 0: { items: 3, margin: 0 }, 1100: { items: 4 } },
                     autoplay: true,
-                    autoplayTimeout: 20000,
-                    autoplayHoverPause: true,
+                    autoplayTimeout: 5000,
+                    autoplayHoverPause: true
                 });
-            })
+            }, carouselDelay);
+        }
+
 </script>
